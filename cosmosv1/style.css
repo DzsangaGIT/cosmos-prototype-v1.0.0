@@ -1,0 +1,80 @@
+.navbar-before-scroll .nav-link,
+.navbar-before-scroll .navbar-toggler-icon {
+  color: #ffffff;
+}
+
+.navbar-after-scroll .nav-link,
+.navbar-after-scroll .navbar-toggler-icon {
+  color: #ffffff;
+}
+
+.navbar-before-scroll{
+  font-size: 17px
+}
+
+
+
+.navbar-after-scroll{
+  background-color: #292929;  
+}
+
+.navbar-after-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+.navbar-before-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+.navbar.navbar-before-scroll.navbar-after-scroll {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 991.98px) {
+  #main-navbar {
+    background-color: #292929;
+  }
+
+  .nav-link,
+  .navbar-toggler-icon {
+    color: #ffffff !important;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (min-width: 992px) {
+  .rotate-lg {
+    transform: rotate(6deg);
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
