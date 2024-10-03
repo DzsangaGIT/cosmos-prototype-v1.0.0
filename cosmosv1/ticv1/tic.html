@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tic.css">
+    <link rel="icon" type="image/x-icon" href="cosmoslogo.png">
+</head>
+<body>
+
+    <div id="board-container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="board">
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+          <div class="cell" onclick="makeMove(this)"></div>
+        </div>
+  <p id="message">Következő játékos: X</p>
+  <button id="new-game-button" onclick="newGame()">Új játék</button>
+  <script src="tic.js"></script>
+</body>
+</html>
